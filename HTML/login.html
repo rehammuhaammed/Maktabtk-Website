@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/login.js"></script> -->
+</head>
+<body >
+    <script>
+        function validate()
+{
+var box1=document.getElementById("box1").value;
+var box2=document.getElementById("box2").value;
+if(box1=="admin"&&box2=="user")
+{
+alert("login succesfully")
+return false;
+}
+else
+{
+
+    alert("login failed");
+}
+}
+
+
+    </script>
+    <style>
+        body {
+       
+            background-image: url(https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?cs=srgb&dl=pexels-pixabay-159711.jpg&fm=jpg);
+            background-size: cover;
+            font-family: cursive;
+        }
+    </style>
+    <div class="form-ground">
+        <h1>Sign in</h1>
+        <form method="POST" action="home.html">
+            <input id="box1" type="text" placeholder="username" required autofocus>
+            <input id="box2" type="password" placeholder="password" required>
+            <input id="submit" type="submit" value="login"  onclick="validate()" >
+            <input id="reset" type="reset" value="cancel">
+            
+        </form>
+        <a href="../HTML/signup.html">DON'T HAVE AN ACOUNT ? SIGN UP</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/login.css" >
+    
+    <title>login to</title>
+</head>
+<script>
+function validate()
+{
+var box1=document.getElementById("box1").value;
+var box2=document.getElementById("box2").value;
+if(box1=="admin"&&box2=="admin4004")
+{
+alert("login succesfully")
+return false;
+}
+
+else
+{
+
+    alert("login failed");
+}
+}
+
+</script>
+<style>
+    body {
+    background-color: #eee;
+    font-family: cursive;
+}
+.form-color {
+    width: 600px;
+    height: 762px;
+    background-color: #161e2d;
+    margin: 20px auto;
+    border-radius: 35px;
+    box-shadow: 0 0 16px -1px #000000b5;
+    /* position: relative; */
+}
+img {
+    width: 601px;
+    height: 280px;
+    border-radius: 35px 35px 0 0;
+    /* position : absolute; */
+}
+.welcome {
+    text-align: center;
+    color: #0088a9;
+    font-size: 54px;
+    padding: 0px;
+    margin: 6px auto;
+    font-family: inherit;
+    font-weight: bold;
+    text-shadow: 2px 3px 5px #000;
+}
+#box1,
+#box2 {   
+    font-family: cursive;
+    border: 0;
+    border-bottom: 2px solid rgb(189 157 157);
+    width: 80%;
+    background: transparent;
+    transition: 0.15s ease-in-out;
+    padding: 10px 0;
+    margin: -6px 55px;
+    color:#fe8860;
+    font-size: 25px;
+    
+
+}
+
+form div {
+    margin: 10px auto;
+    padding : 20px;
+}
+#sub,
+#res {
+    background-color: #0088a9;
+    border: none;
+    cursor: pointer;
+    padding: 13px 32px;
+    border-radius: 10px;
+    font-family:inherit;
+    
+    
+}
+#res {
+    float: left; 
+    margin: -42px 145px;
+     
+}
+#sub {
+    margin: 0px 142px;
+    float: right;
+    display: inline-block;
+}
+
+form label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 10px
+}
+span {
+    color: red;
+}
+
+
+#sub:hover {
+    color : #fff;
+}
+#res:hover {
+    color : #fff;
+}
+
+
+
+
+footer {
+    background-color: #111;
+    color: #fff;
+    height:auto;
+    width:100%;
+    font-family: cursive;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size : 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li {
+    margin: 0 10px;
+}
+.social a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.social a:hover {
+    color: aqua;
+}
+.footer-bottom {
+background : #000;
+width: 100vw;
+padding : 20px 0;
+text-align: center;
+
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+.footer-bottom span {
+    text-transform : uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+</style>
+<body>
+    <div class="form-color" >
+        <img src="../Media/photo.jpg" alt="">
+        <p class="welcome">Sign in</p>
+        <form method="get" action="../HTML/linksl/admin.html">                      
+           
+                <div >
+                    <!-- <label>Username<span>*</span></label> -->
+                    <input id="box1" type="text" required placeholder="Login">
+                </div>
+               
+                <div>
+                    <!-- <label>Password<span>*</span></label> -->
+                    <input id="box2" type="password" required placeholder="Password">
+                </div>
+                <div>
+                    <input id="sub" type="submit" value="Login" onclick="validate()" >
+                    <input id="res" type="reset" value="Cancel">
+                </div>
+               
+        
+           
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content"> 
+            <h3>Book library</h3>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorem quae deleniti illo dolore?</p> -->
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2021 Book.lib designed by <span>khaled</span></p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
